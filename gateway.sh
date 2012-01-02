@@ -80,7 +80,8 @@ print_error() {
         #注销成功
         ;;
     *)
-        echo "Unkown Error" >&2
+        # 网关升级后正常登录出现跳转界面，而不是Msg界面
+        #echo "Unkown Error" >&2
         ;;
     esac
 }
